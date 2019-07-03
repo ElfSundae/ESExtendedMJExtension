@@ -3,13 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D6E0B0178069A6E6BD3F2CC4 /* Pods_Example_macOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEABD68843223946D31188D /* Pods_Example_macOS_Example.framework */; };
 		E2A66597A44E3D7143B9F449 /* Pods_Example_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460473660A3899BFC56CE30F /* Pods_Example_iOS_Example.framework */; };
 		E70ED6F322CCB243003918D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70ED6F222CCB243003918D6 /* LaunchScreen.storyboard */; };
+		E70ED6F922CCB64C003918D6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E70ED6F822CCB64C003918D6 /* User.m */; };
+		E70ED6FA22CCB64C003918D6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E70ED6F822CCB64C003918D6 /* User.m */; };
+		E70ED6FD22CCB664003918D6 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = E70ED6FC22CCB664003918D6 /* Post.m */; };
+		E70ED6FE22CCB664003918D6 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = E70ED6FC22CCB664003918D6 /* Post.m */; };
+		E70ED70122CCB694003918D6 /* TestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E70ED70022CCB694003918D6 /* TestCase.m */; };
+		E70ED70222CCB694003918D6 /* TestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E70ED70022CCB694003918D6 /* TestCase.m */; };
+		E70ED70522CCB77B003918D6 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E70ED70422CCB77B003918D6 /* MJExtensionConfig.m */; };
+		E70ED70622CCB77B003918D6 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E70ED70422CCB77B003918D6 /* MJExtensionConfig.m */; };
 		E7BEC84322BA53E100653343 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BEC84222BA53E100653343 /* AppDelegate.m */; };
 		E7BEC84622BA53E100653343 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BEC84522BA53E100653343 /* ViewController.m */; };
 		E7BEC84B22BA53E200653343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BEC84A22BA53E200653343 /* Assets.xcassets */; };
@@ -40,6 +48,14 @@
 		96E61C15BA55C13040831364 /* Pods-Example-macOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-macOS Example.release.xcconfig"; path = "Target Support Files/Pods-Example-macOS Example/Pods-Example-macOS Example.release.xcconfig"; sourceTree = "<group>"; };
 		B856DB10970F565F0CCEA119 /* Pods-Example-macOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-macOS Example.debug.xcconfig"; path = "Target Support Files/Pods-Example-macOS Example/Pods-Example-macOS Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E70ED6F222CCB243003918D6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E70ED6F722CCB64C003918D6 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E70ED6F822CCB64C003918D6 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E70ED6FB22CCB664003918D6 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		E70ED6FC22CCB664003918D6 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		E70ED6FF22CCB694003918D6 /* TestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCase.h; sourceTree = "<group>"; };
+		E70ED70022CCB694003918D6 /* TestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCase.m; sourceTree = "<group>"; };
+		E70ED70322CCB77B003918D6 /* MJExtensionConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
+		E70ED70422CCB77B003918D6 /* MJExtensionConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
 		E7BEC83F22BA53E100653343 /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BEC84122BA53E100653343 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7BEC84222BA53E100653343 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,9 +116,25 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		E70ED6F622CCB630003918D6 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E70ED70322CCB77B003918D6 /* MJExtensionConfig.h */,
+				E70ED70422CCB77B003918D6 /* MJExtensionConfig.m */,
+				E70ED6F722CCB64C003918D6 /* User.h */,
+				E70ED6F822CCB64C003918D6 /* User.m */,
+				E70ED6FB22CCB664003918D6 /* Post.h */,
+				E70ED6FC22CCB664003918D6 /* Post.m */,
+				E70ED6FF22CCB694003918D6 /* TestCase.h */,
+				E70ED70022CCB694003918D6 /* TestCase.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		E7BEC7AC22BA3C3F00653343 = {
 			isa = PBXGroup;
 			children = (
+				E70ED6F622CCB630003918D6 /* Tests */,
 				E7BEC84022BA53E100653343 /* iOS Example */,
 				E7BEC85A22BA53FE00653343 /* macOS Example */,
 				E7BEC7B822BA3C7800653343 /* Products */,
@@ -334,6 +366,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70ED6FD22CCB664003918D6 /* Post.m in Sources */,
+				E70ED70122CCB694003918D6 /* TestCase.m in Sources */,
+				E70ED70522CCB77B003918D6 /* MJExtensionConfig.m in Sources */,
+				E70ED6F922CCB64C003918D6 /* User.m in Sources */,
 				E7BEC84622BA53E100653343 /* ViewController.m in Sources */,
 				E7BEC85122BA53E200653343 /* main.m in Sources */,
 				E7BEC84322BA53E100653343 /* AppDelegate.m in Sources */,
@@ -346,6 +382,10 @@
 			files = (
 				E7BEC86522BA53FF00653343 /* main.m in Sources */,
 				E7BEC85D22BA53FE00653343 /* AppDelegate.m in Sources */,
+				E70ED70622CCB77B003918D6 /* MJExtensionConfig.m in Sources */,
+				E70ED70222CCB694003918D6 /* TestCase.m in Sources */,
+				E70ED6FA22CCB64C003918D6 /* User.m in Sources */,
+				E70ED6FE22CCB664003918D6 /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
