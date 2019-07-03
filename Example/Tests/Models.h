@@ -1,5 +1,5 @@
 //
-//  User.h
+//  Models.h
 //  Example
 //
 //  Created by Elf Sundae on 2019/07/03.
@@ -7,15 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Post.h"
+@class Post;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface User : NSObject
 
 @property (nonatomic, copy) NSString *ID;
-@property (nonatomic, copy) NSString *nickname;
-@property (nonatomic, copy) NSString *avatar;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSArray<Post *> *posts;
+
+@end
+
+@interface Post : NSObject
+
+@property (nonatomic, copy) NSString *content;
 
 @end
 
