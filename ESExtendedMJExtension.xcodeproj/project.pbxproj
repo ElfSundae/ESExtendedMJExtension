@@ -8,6 +8,8 @@
 
 /* Begin PBXFileReference section */
 		E70ED6EA22CCAD97003918D6 /* ESExtendedMJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESExtendedMJExtension.h; sourceTree = "<group>"; };
+		E70ED6F422CCB4BE003918D6 /* NSObject+ESExtendedMJKeyValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ESExtendedMJKeyValue.h"; sourceTree = "<group>"; };
+		E70ED6F522CCB4BE003918D6 /* NSObject+ESExtendedMJKeyValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ESExtendedMJKeyValue.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -30,6 +32,8 @@
 			isa = PBXGroup;
 			children = (
 				E70ED6EA22CCAD97003918D6 /* ESExtendedMJExtension.h */,
+				E70ED6F422CCB4BE003918D6 /* NSObject+ESExtendedMJKeyValue.h */,
+				E70ED6F522CCB4BE003918D6 /* NSObject+ESExtendedMJKeyValue.m */,
 			);
 			path = ESExtendedMJExtension;
 			sourceTree = "<group>";

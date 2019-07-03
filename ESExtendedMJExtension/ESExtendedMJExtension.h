@@ -6,7 +6,7 @@
 //  Copyright © 2019 https://0x123.com. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for ESExtendedMJExtension.
 FOUNDATION_EXPORT double ESExtendedMJExtensionVersionNumber;
@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char ESExtendedMJExtensionVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <ESExtendedMJExtension/PublicHeader.h>
 
 
+#import <ESExtendedMJExtension/NSObject+ESExtendedMJKeyValue.h>
