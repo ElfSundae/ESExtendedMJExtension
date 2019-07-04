@@ -1,6 +1,6 @@
 PODS:
   - MJExtension (3.0.17)
-  - MJExtensionValidation (0.1.0):
+  - MJExtensionValidation (1.0.0):
     - MJExtension (~> 3.0)
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
-  MJExtensionValidation: 791b7be1f42f19ca21662268816a6596ac42575a
+  MJExtensionValidation: 94001596c8c43291b2b126ab823b4927785cc4c9
 
 PODFILE CHECKSUM: a2ce57457086a9ed476fa3640225b2b444fecff6
 
