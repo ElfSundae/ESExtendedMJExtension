@@ -14,6 +14,25 @@ MJExtensionValidation provides an opportunity of validating converted model obje
 pod 'MJExtensionValidation'
 ```
 
+## Usage
+
+Implement `+mj_validateConvertedObject:` method for your model to validate the converted object:
+
+```objc
+#import <MJExtensionValidation/MJExtensionValidation.h>
+
+@implementation User
+
++ (BOOL)mj_validateConvertedObject:(User *)user
+{
+    return user.ID.length > 0;
+}
+
+@end
+```
+
+Then the JSON-to-model converting methods such as `+mj_objectWithKeyValues:` will return `nil` if the converted object could not pass the validation.
+
 ## License
 
 MJExtensionValidation is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
