@@ -1,10 +1,10 @@
 use_frameworks!
 
-workspace 'ESExtendedMJExtension'
+workspace 'MJExtensionValidation'
 project 'Example/Example'
 
 abstract_target 'Example' do
-    pod 'ESExtendedMJExtension', :path => '.'
+    pod 'MJExtensionValidation', :path => '.'
 
     target 'iOS Example' do
         platform :ios, '8.0'

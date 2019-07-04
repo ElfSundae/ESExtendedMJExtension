@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		E70ED6EA22CCAD97003918D6 /* ESExtendedMJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESExtendedMJExtension.h; sourceTree = "<group>"; };
-		E70ED6F422CCB4BE003918D6 /* NSObject+ESExtendedMJKeyValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ESExtendedMJKeyValue.h"; sourceTree = "<group>"; };
-		E70ED6F522CCB4BE003918D6 /* NSObject+ESExtendedMJKeyValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ESExtendedMJKeyValue.m"; sourceTree = "<group>"; };
+		E70ED6EA22CCAD97003918D6 /* MJExtensionValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionValidation.h; sourceTree = "<group>"; };
+		E70ED6F422CCB4BE003918D6 /* NSObject+MJKeyValueValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValueValidation.h"; sourceTree = "<group>"; };
+		E70ED6F522CCB4BE003918D6 /* NSObject+MJKeyValueValidation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValueValidation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		E70ED6DD22CCAD97003918D6 = {
 			isa = PBXGroup;
 			children = (
-				E70ED6E922CCAD97003918D6 /* ESExtendedMJExtension */,
+				E70ED6E922CCAD97003918D6 /* MJExtensionValidation */,
 				E70ED6E822CCAD97003918D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -28,14 +28,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E70ED6E922CCAD97003918D6 /* ESExtendedMJExtension */ = {
+		E70ED6E922CCAD97003918D6 /* MJExtensionValidation */ = {
 			isa = PBXGroup;
 			children = (
-				E70ED6EA22CCAD97003918D6 /* ESExtendedMJExtension.h */,
-				E70ED6F422CCB4BE003918D6 /* NSObject+ESExtendedMJKeyValue.h */,
-				E70ED6F522CCB4BE003918D6 /* NSObject+ESExtendedMJKeyValue.m */,
+				E70ED6EA22CCAD97003918D6 /* MJExtensionValidation.h */,
+				E70ED6F422CCB4BE003918D6 /* NSObject+MJKeyValueValidation.h */,
+				E70ED6F522CCB4BE003918D6 /* NSObject+MJKeyValueValidation.m */,
 			);
-			path = ESExtendedMJExtension;
+			path = MJExtensionValidation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -47,7 +47,7 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "https://0x123.com";
 			};
-			buildConfigurationList = E70ED6E122CCAD97003918D6 /* Build configuration list for PBXProject "ESExtendedMJExtension" */;
+			buildConfigurationList = E70ED6E122CCAD97003918D6 /* Build configuration list for PBXProject "MJExtensionValidation" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -185,7 +185,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E70ED6E122CCAD97003918D6 /* Build configuration list for PBXProject "ESExtendedMJExtension" */ = {
+		E70ED6E122CCAD97003918D6 /* Build configuration list for PBXProject "MJExtensionValidation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E70ED6ED22CCAD97003918D6 /* Debug */,

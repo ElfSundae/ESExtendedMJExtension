@@ -1,6 +1,6 @@
 //
-//  NSObject+ESExtendedMJKeyValue.h
-//  ESExtendedMJExtension
+//  NSObject+MJKeyValueValidation.h
+//  MJExtensionValidation
 //
 //  Created by Elf Sundae on 2019/07/03.
 //  Copyright © 2019 https://0x123.com. All rights reserved.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (ESExtendedMJKeyValue)
+@interface NSObject (MJKeyValueValidation)
 
 @end
 

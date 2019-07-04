@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ESExtendedMJExtension.xcodeproj">
+      location = "self:/Volumes/HDD/projects/iOS/MJExtensionValidation/MJExtensionValidation.xcodeproj">
    </FileRef>
 </Workspace>
