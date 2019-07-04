@@ -6,7 +6,7 @@
 
 MJExtensionValidation provides an opportunity of validating converted model objects for [MJExtension] (A fast, convenient and nonintrusive conversion framework between JSON and model).
 
-为 [MJExtension] 增加 model 解析验证功能。
+为 [MJExtension] 的 JSON-to-Model 转换增加校验接口。
 
 ## Installation
 
