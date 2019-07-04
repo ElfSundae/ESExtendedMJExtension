@@ -14,19 +14,28 @@ static void Log(Class cls, id object)
 {
     NSString *error = [cls mj_error].domain;
     error = error ? [NSString stringWithFormat:@"❌ %@", error] : @"✅";
-    NSLog(@"%@ %@", error, object);
+    NSLog(@"%@ %@ %@", error, object, [object mj_keyValues]);
 }
 
-#define LogUser(obj) Log([User class], obj);
+static void LogUser(id json)
+{
+    Log(User.class, [User mj_objectWithKeyValues:json]);
+    Log(NewUser.class, [NewUser mj_objectWithKeyValues:json]);
+}
 
 @implementation TestCase
 
 + (void)run
 {
-    LogUser([User mj_objectWithKeyValues:nil]);
-    LogUser([User mj_objectWithKeyValues:@"foo"]);
-    LogUser([User mj_objectWithKeyValues:@{}]);
-    LogUser([User mj_objectWithKeyValues:@{ @"id": @123 }]);
+    LogUser(nil);
+    LogUser(@"string");
+    LogUser(@{});
+    LogUser(@{ @"id": @123 });
+    LogUser(@{ @"id": @"fake" });
+    LogUser(@{ @"id": @123, @"posts": @[] });
+    LogUser(@{ @"id": @123, @"posts": @[ @{} ] });
+    LogUser(@{ @"id": @123, @"posts": @[ @{ @"content": @"foobar" } ] });
+    LogUser(@{ @"id": @123, @"posts": @[ @{ @"content": @"foobar", @"id": @456 } ] });
 }
 
 @end

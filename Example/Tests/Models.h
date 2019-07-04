@@ -19,10 +19,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface NewUser : User
+@end
+
 @interface Post : NSObject
 
+@property (nonatomic, copy) NSString *ID;
 @property (nonatomic, copy) NSString *content;
 
+@end
+
+@interface NewPost : Post
 @end
 
 NS_ASSUME_NONNULL_END
