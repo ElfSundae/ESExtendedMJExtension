@@ -4,7 +4,7 @@
 ![CocoaPods Version](http://img.shields.io/cocoapods/v/MJExtensionValidation.svg)
 ![Platforms](https://img.shields.io/cocoapods/p/MJExtensionValidation.svg)
 
-MJExtensionValidation provides an opportunity of validating decoded model objects for [MJExtension] (A fast, convenient and nonintrusive conversion framework between JSON and model).
+MJExtensionValidation provides an opportunity of validating converted model objects for [MJExtension] (A fast, convenient and nonintrusive conversion framework between JSON and model).
 
 为 [MJExtension] 增加 model 解析验证功能。
 
