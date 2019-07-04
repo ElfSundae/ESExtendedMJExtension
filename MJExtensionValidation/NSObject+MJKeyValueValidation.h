@@ -10,7 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (MJKeyValueValidation)
+@protocol MJKeyValueValidation <NSObject>
+@optional
+
+/**
+ * Validates the converted object.
+ */
++ (BOOL)mj_validateConvertedObject:(id)object;
+
+@end
+
+@interface NSObject (MJKeyValueValidation) <MJKeyValueValidation>
 
 @end
 
