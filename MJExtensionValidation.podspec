@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'MJExtensionValidation'
-  s.version     = '1.0.0'
+  s.version     = '1.1.0'
   s.license     = { :type => 'MIT', :file => 'LICENSE' }
   s.summary     = 'Provides an opportunity of validating converted model objects for MJExtension.'
   s.homepage    = 'https://github.com/ElfSundae/MJExtensionValidation'
