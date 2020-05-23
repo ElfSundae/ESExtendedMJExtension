@@ -23,6 +23,13 @@ static void MVSwizzleClassMethod(Class class, SEL originalSelector, SEL swizzled
     }
 }
 
+@interface NSObject (MJEV_MJKeyValue)
+
+// Expose +setMj_error: to use `MJExtensionBuildError` macro
++ (void)setMj_error:(NSError *)error;
+
+@end
+
 @implementation NSObject (MJKeyValueValidation)
 
 + (void)load
@@ -40,10 +47,8 @@ static void MVSwizzleClassMethod(Class class, SEL originalSelector, SEL swizzled
     if (object &&
         [self respondsToSelector:@selector(mj_validateConvertedObject:)] &&
         ![self mj_validateConvertedObject:object]) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wundeclared-selector"
-        [self performSelector:@selector(setMj_error:) withObject:[NSError errorWithDomain:@"The converted object could not pass validation." code:250 userInfo:nil]];
-#pragma clang diagnostic pop
+
+        MJExtensionBuildError(self, @"The converted object could not pass validation.");
 
         object = nil;
     }
