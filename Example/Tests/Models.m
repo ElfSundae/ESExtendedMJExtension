@@ -26,7 +26,7 @@
     return @{ @"posts": [NewPost class] };
 }
 
-+ (BOOL)mj_validateConvertedObject:(NewUser *)object
++ (BOOL)mj_validateConvertedObject:(NewUser *)object withKeyValues:(id)keyValues
 {
     return object.ID.length && object.ID.mj_isPureInt;
 }
@@ -39,7 +39,7 @@
 
 @implementation NewPost
 
-+ (BOOL)mj_validateConvertedObject:(NewPost *)object
++ (BOOL)mj_validateConvertedObject:(NewPost *)object withKeyValues:(id)keyValues
 {
     return object.ID.length;
 }

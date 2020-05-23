@@ -16,14 +16,14 @@ pod 'MJExtensionValidation'
 
 ## Usage
 
-Implement `+mj_validateConvertedObject:` method for your model to validate the converted object:
+Implement `+mj_validateConvertedObject:withKeyValues:` method for your model to validate the converted object:
 
 ```objc
 #import <MJExtensionValidation/MJExtensionValidation.h>
 
 @implementation User
 
-+ (BOOL)mj_validateConvertedObject:(User *)user
++ (BOOL)mj_validateConvertedObject:(User *)user withKeyValues:(id)keyValues
 {
     return user.ID.length > 0;
 }
