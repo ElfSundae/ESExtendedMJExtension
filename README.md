@@ -1,8 +1,8 @@
 # MJExtensionValidation
 
-[![Build Status](https://travis-ci.org/ElfSundae/MJExtensionValidation.svg)](https://travis-ci.org/ElfSundae/MJExtensionValidation)
-![CocoaPods Version](http://img.shields.io/cocoapods/v/MJExtensionValidation.svg)
-![Platforms](https://img.shields.io/cocoapods/p/MJExtensionValidation.svg)
+[![Build status](https://github.com/ElfSundae/MJExtensionValidation/workflows/Build/badge.svg)](https://github.com/ElfSundae/MJExtensionValidation/actions?query=workflow%3ABuild)
+![CocoaPods](https://img.shields.io/cocoapods/v/MJExtensionValidation)
+![Platforms](https://img.shields.io/cocoapods/p/MJExtensionValidation)
 
 MJExtensionValidation provides an opportunity of validating converted model objects for [MJExtension] (A fast, convenient and nonintrusive conversion framework between JSON and model).
 
