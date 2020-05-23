@@ -15,8 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Validates the converted object.
+ *
+ * @param object The converted object will be returned from `+mj_objectWith...` methods
+ * @param keyValues The source keyValues
+ * @return YES if the object is valid, otherwise NO.
  */
-+ (BOOL)mj_validateConvertedObject:(id)object;
++ (BOOL)mj_validateConvertedObject:(id)object withKeyValues:(id)keyValues;
 
 @end
 

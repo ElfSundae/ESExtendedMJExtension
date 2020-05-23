@@ -36,18 +36,17 @@ static void MVSwizzleClassMethod(Class class, SEL originalSelector, SEL swizzled
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        MVSwizzleClassMethod(self, @selector(mj_objectWithKeyValues:context:), @selector(swizzled_mj_objectWithKeyValues:context:));
+        MVSwizzleClassMethod(self, @selector(mj_objectWithKeyValues:context:), @selector(mjev_mj_objectWithKeyValues:context:));
     });
 }
 
-+ (instancetype)swizzled_mj_objectWithKeyValues:(id)keyValues context:(NSManagedObjectContext *)context
++ (instancetype)mjev_mj_objectWithKeyValues:(id)keyValues context:(NSManagedObjectContext *)context
 {
-    id object = [self swizzled_mj_objectWithKeyValues:keyValues context:context];
+    id object = [self mjev_mj_objectWithKeyValues:keyValues context:context];
 
     if (object &&
-        [self respondsToSelector:@selector(mj_validateConvertedObject:)] &&
-        ![self mj_validateConvertedObject:object]) {
-
+        [self respondsToSelector:@selector(mj_validateConvertedObject:withKeyValues:)] &&
+        ![self mj_validateConvertedObject:object withKeyValues:keyValues]) {
         MJExtensionBuildError(self, @"The converted object could not pass validation.");
 
         object = nil;
