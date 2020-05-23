@@ -1,13 +1,13 @@
 PODS:
-  - MJExtension (3.0.17)
+  - MJExtension (3.2.1)
   - MJExtensionValidation (1.0.0):
-    - MJExtension (~> 3.0)
+    - MJExtension (~> 3.2)
 
 DEPENDENCIES:
   - MJExtensionValidation (from `.`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - MJExtension
 
 EXTERNAL SOURCES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
-  MJExtensionValidation: 94001596c8c43291b2b126ab823b4927785cc4c9
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJExtensionValidation: 4f377693bba8acfabedf1552a2b8c1b806b9b305
 
 PODFILE CHECKSUM: a2ce57457086a9ed476fa3640225b2b444fecff6
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.9.2

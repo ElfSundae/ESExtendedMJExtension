@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.8'
 
-  s.source_files = 'MJExtensionValidation/**/*.{h,m}'
+  s.source_files = 'MJExtensionValidation/*.{h,m}'
 
-  s.dependency 'MJExtension', '~> 3.0'
+  s.dependency 'MJExtension', '~> 3.2'
 end
